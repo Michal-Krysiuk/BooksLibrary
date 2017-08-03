@@ -1,0 +1,15 @@
+<div>
+  <form *ngIf="book" ngForm="form" (submit)="saveBook(book)">
+    <div>
+      <label>Title: </label>
+      <input type="text" name="book-title" [(ngModel)]="book.title"/>
+    </div>
+    <div>
+      <label>Author: </label>
+      <input type="text" name="book-author" [(ngModel)]="book.author"/>
+    </div>
+    <div>
+      <button type="submit">Save</button>
+    </div>
+  </form>
+</div>

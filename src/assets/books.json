@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Unlocking Android",
+    "author": "W. Frank Ableson"
+  },
+  {
+    "id": 2,
+    "title": "Android in Action, Second Edition",
+    "author": "W. Frank Ableson"
+  },
+  {
+    "id": 3,
+    "title": "Specification by Example",
+    "author": "Gojko Adzic"
+  },
+  {
+    "id": 4,
+    "title": "Flex 3 in Action",
+    "author": "Tariq Ahmed with Jon Hirschi"
+  },
+  {
+    "id": 5,
+    "title": "Flex 4 in Action",
+    "author": "Tariq Ahmed"
+  }
+]

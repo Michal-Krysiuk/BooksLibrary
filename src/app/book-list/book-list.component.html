@@ -1,0 +1,17 @@
+<div class="table">
+  <div class="line">
+    <span class="headline">Id</span>
+    <span class="headline">Title</span>
+    <span class="headline">Author</span>
+    <span class="headline">Action</span>
+  </div>
+  <div class="line" *ngFor="let book of books">
+    <span data-th="Id">{{book.id}}</span>
+    <span data-th="Title">{{book.title}}</span>
+    <span data-th="Author">{{book.author}}</span>
+    <span>
+      <span (click)="deleteBook(book.id)">remove</span>
+      <span [routerLink]="['/book-edit', book.id]">edit</span>
+    </span>
+  </div>
+</div>

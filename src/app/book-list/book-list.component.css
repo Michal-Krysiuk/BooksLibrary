@@ -1,0 +1,40 @@
+$breakpoint-alpha: 480px;
+
+.table {
+  margin: 1em 0;
+  min-width: 300px;
+}
+
+.line {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: yellow;
+}
+
+.headline {
+    display: none;
+  }
+
+  .cell {
+      display: block;
+
+      &:first-child {
+        padding-top: .5em;
+        background-color: green;
+      }
+      &:last-child {
+        padding-bottom: .5em;
+        color: purple;
+      }
+
+      &:before {
+        content: attr(data-th)": ";
+        font-weight: bold;
+        width: 6.5em;
+        display: inline-block;
+
+        @media (min-width: $breakpoint-alpha) {
+          display: none;
+        }
+      }
+    }
